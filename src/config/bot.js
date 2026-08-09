@@ -189,7 +189,7 @@ export const botConfig = {
     cooldowns: {
       daily: 24 * 60 * 60 * 1000,
       work: 60 * 60 * 1000,
-      crime: 2 * 1 * 1 * 1,
+      crime: 1 * 1 * 1 * 1,
       rob: 4 * 60 * 60 * 1000,
     },
 
@@ -198,7 +198,7 @@ export const botConfig = {
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
-    robFailJailTime: 3000,
+    robFailJailTime: 1,
   },
 
   // =========================
