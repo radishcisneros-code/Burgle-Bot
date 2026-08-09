@@ -169,7 +169,7 @@ export const botConfig = {
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 10,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 300000000,
@@ -194,7 +194,7 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.7,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
