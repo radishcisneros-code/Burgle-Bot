@@ -5,7 +5,7 @@ import { botConfig } from '../../config/bot.js';
 import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHandler.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const COOLDOWN = 1 * 1 * 1;
+const COOLDOWN = 1 * 1 * 100;
 const MIN_WIN = Number(botConfig?.economy?.begMin) || 50;
 const MAX_WIN = Number(botConfig?.economy?.begMax) || 200;
 const SUCCESS_CHANCE = 0.7;
