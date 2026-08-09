@@ -5,7 +5,7 @@ import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHan
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
 const CRIME_COOLDOWN = 1 * 1 * 1;
-const JAIL_TIME = 2 * 1 * 1 * 10;
+const JAIL_TIME = 1 * 1 * 1 * 1;
 const FINE_RATE = 0.2;
 
 const CRIME_TYPES = [
