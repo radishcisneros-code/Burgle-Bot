@@ -100,7 +100,7 @@ roleId: null,
     },
     {
         id: 'lucky_charm',
-        name: '🍀 Lucky Charm',
+        name: '💊 Fentmasters Deluxe Meal',
         price: 10000,
         description: 'Increases luck for gambling. Has 3 uses before being consumed.',
         type: 'consumable',
