@@ -95,7 +95,7 @@ cashChange = -betAmount;
 
                 resultEmbed = warningEmbed(
                     "💔 You Lost...",
-                    `YOU FAILED LIL LAKA! YOU LOST EVERYTHING! YOUR **$${betAmount.toLocaleString()}** BET IS GONE.`,
+                    `YOU FAILED LIL LAKA! YOU LOST EVERYTHING!! YOUR **$${betAmount.toLocaleString()}** BET IS GONE.`,
                 );
             }
 
