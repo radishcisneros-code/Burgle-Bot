@@ -122,12 +122,12 @@ export default {
             )
                 .addFields(
                     {
-                        name: "New Cash Balance",
+                        name: "New Burglebuck Balance",
                         value: `$${userData.wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
-                        name: "New Bank Balance",
+                        name: "New Sinister Bank Balance",
                         value: `$${userData.bank.toLocaleString()} / $${maxBank.toLocaleString()}`,
                         inline: true,
                     },
