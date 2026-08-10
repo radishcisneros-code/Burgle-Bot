@@ -64,9 +64,9 @@ export default {
 
                 const successMessages = [
                     `A kind stranger drops **$${amountWon.toLocaleString()}** into your cup.`,
-                    `You spotted an unattended wallet! You grab **$${amountWon.toLocaleString()}** and run.`,
-                    `Someone took pity on you and gave you **$${amountWon.toLocaleString()}**!`,
-                    `You found **$${amountWon.toLocaleString()}** under a park bench.`,
+                    `You pray, and Sinister Samuel blesses you! Manifesting **$${amountWon.toLocaleString()}** into your wallet.`,
+                    `The spirit of Morglet took pity on you, and gifted **$${amountWon.toLocaleString()}**!`,
+                    `You found **$${amountWon.toLocaleString()}** in your slop meal from El Johniito's Cafe.`,
                 ];
 
                 replyEmbed = successEmbed(
@@ -77,9 +77,9 @@ export default {
                 );
             } else {
                 const failMessages = [
-                    "The police chased you off. You got nothing.",
-                    "Someone yelled, 'Get a job!' and walked past.",
-                    "A squirrel stole the single coin you had.",
+                    "The Ha-La Helpers chased you off. You got nothing.",
+                    "Someone yelled, 'Get a job laka!' and slapped your sorry aah.",
+                    "A mini Johnitto stole the single Burglebuck you had.",
                     "You tried to beg, but you were too embarrassed and gave up.",
                 ];
 
