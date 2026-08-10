@@ -61,9 +61,9 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
+      { question: "What is your name?", required: false },
       { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Why do you want to join?", required: false },
     ],
 
     // Embed colors by application status.
@@ -172,7 +172,7 @@ export const botConfig = {
     startingBalance: 10,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 300000000,
+    baseBankCapacity: 1000000,
 
     // Daily reward amount.
     dailyAmount: 100,
