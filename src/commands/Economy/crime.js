@@ -109,8 +109,8 @@ export default {
                 
                 const embed = warningEmbed(
                     "🚔 Crime Failed!",
-                    `You were caught while attempting ${crime.name} and have been sent to jail! ` +
-                    `You were fined ${fine.toLocaleString()} coins and will be in jail for 2 hours.`
+                    `You were caught while attempting ${crime.name} and have been sent to Guantanamo Bay. ` +
+                    `You were fined ${fine.toLocaleString()} Burglebucks and will be in Guantanamo Bay for 2 hours.`
                 );
                 
                 await InteractionHelper.safeEditReply(interaction, { embeds: [embed] });
