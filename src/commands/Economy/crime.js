@@ -94,7 +94,7 @@ export default {
                 
                 const embed = successEmbed(
                     "🕵️ Crime Successful!",
-                    `You successfully committed ${crime.name} and earned **${amountEarned}** coins!`
+                    `You successfully committed ${crime.name} and earned **${amountEarned}** Burglebucks!`
                 );
                 
                 await InteractionHelper.safeEditReply(interaction, { embeds: [embed] });
