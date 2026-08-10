@@ -13,7 +13,7 @@ const FINE_PERCENTAGE = 0.1;
 export default {
     data: new SlashCommandBuilder()
         .setName('rob')
-        .setDescription('Attempt to rob another user (very risky)')
+        .setDescription('Attempt to burgle another user (very risky)')
         .addUserOption(option =>
             option
                 .setName('user')
@@ -43,7 +43,7 @@ export default {
                 throw createError(
                     "Cannot rob bot",
                     ErrorTypes.VALIDATION,
-                    "You cannot rob a bot.",
+                    "You cannot rob a bot. We are eternal unlike you.",
                     { victimId: victimUser.id, isBot: true }
                 );
             }
@@ -79,7 +79,7 @@ export default {
                 throw createError(
                     "Victim too poor",
                     ErrorTypes.VALIDATION,
-                    `${victimUser.username} is too poor. They need at least $500 cash to be worth robbing.`,
+                    `${victimUser.username} is too poor. They need at least $500 cash to be worth burgling.`,
                     { victimWallet: victimData.wallet, required: 500 }
                 );
             }
@@ -94,7 +94,7 @@ export default {
                     embeds: [
                         warningEmbed(
                             'Robbery Blocked',
-                            `${victimUser.username} was prepared! Your attempt failed because they own a **Personal Safe**. You got away clean but didn't gain anything.`
+                            `${victimUser.username} was Burgled... But they had casted a **Simple Domain,** protecting their Burglebucks from theft. You got away but didn't heist anything.`
                         )
                     ],
                 });
@@ -111,7 +111,7 @@ export default {
 
                 resultEmbed = successEmbed(
                     'Robbery Successful',
-                    `You successfully stole **$${amountStolen.toLocaleString()}** from ${victimUser.username}!`
+                    `Ha-La! You successfully burgled **$${amountStolen.toLocaleString()}** from ${victimUser.username}!`
                 );
             } else {
                 const fineAmount = Math.floor((robberData.wallet || 0) * FINE_PERCENTAGE);
@@ -124,7 +124,7 @@ export default {
 
                 resultEmbed = buildUserErrorEmbed(
                     'unknown',
-                    `You failed the robbery and were caught! You were fined **$${fineAmount.toLocaleString()}** of your own cash.`,
+                    `You failed the burglary and were caught! In fact, you were counter-burgled and were heisted **$${fineAmount.toLocaleString()}** of your own Burglebucks.`,
                     { titleOverride: 'Robbery Failed' }
                 );
             }
@@ -137,12 +137,12 @@ export default {
             resultEmbed
                 .addFields(
                     {
-                        name: `Your New Cash (${interaction.user.username})`,
+                        name: `Your New Balance (${interaction.user.username})`,
                         value: `$${robberData.wallet.toLocaleString()}`,
                         inline: true,
                     },
                     {
-                        name: `Victim's New Cash (${victimUser.username})`,
+                        name: `Victim's New Balance (${victimUser.username})`,
                         value: `$${victimData.wallet.toLocaleString()}`,
                         inline: true,
                     },
