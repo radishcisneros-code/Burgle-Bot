@@ -51,9 +51,9 @@ export default {
 
             if (userData.wallet < betAmount) {
                 throw createError(
-                    "Insufficient cash for gamble",
+                    "Listen up bucko! Insufficient cash for gamble",
                     ErrorTypes.VALIDATION,
-                    `You only have $${userData.wallet.toLocaleString()} cash, but you are trying to bet $${betAmount.toLocaleString()}.`,
+                    `Listen up brokie, you only have $${userData.wallet.toLocaleString()} cash, but you are trying to bet $${betAmount.toLocaleString()}.`,
                     { required: betAmount, current: userData.wallet }
                 );
             }
@@ -88,14 +88,14 @@ export default {
 
                 resultEmbed = successEmbed(
                     "🎉 You Won!",
-                    `You successfully gambled and turned your **$${betAmount.toLocaleString()}** bet into **$${amountWon.toLocaleString()}**!${cloverMessage}`,
+                    `Sinister! You gambled and turned your **$${betAmount.toLocaleString()}** bet into **$${amountWon.toLocaleString()}**!${cloverMessage}`,
                 );
             } else {
 cashChange = -betAmount;
 
                 resultEmbed = warningEmbed(
                     "💔 You Lost...",
-                    `The dice rolled against you. You lost your **$${betAmount.toLocaleString()}** bet.`,
+                    `YOU FAILED LIL LAKA! YOU LOST EVERYTHING! YOUR **$${betAmount.toLocaleString()}** BET IS GONE.`,
                 );
             }
 
@@ -107,7 +107,7 @@ userData.lastGamble = now;
             const newCash = userData.wallet;
 
             resultEmbed.addFields({
-                name: "New Cash Balance",
+                name: "New Burglebuck Balance",
                 value: `$${newCash.toLocaleString()}`,
                 inline: true,
             });
@@ -122,7 +122,7 @@ userData.lastGamble = now;
                 });
             } else {
                 resultEmbed.setFooter({
-                    text: `Next gamble available in 5 minutes. Base win chance: ${Math.round(BASE_WIN_CHANCE * 100)}%.`,
+                    text: `Next gamble available... do you keep the sinister streak? Base win chance: ${Math.round(BASE_WIN_CHANCE * 100)}%.`,
                 });
             }
 
