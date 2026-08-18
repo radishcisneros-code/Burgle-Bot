@@ -10,29 +10,29 @@ const BASE_MAX_REWARD = 900;
 const FISHING_ROD_MULTIPLIER = 1.5;
 
 const FISH_TYPES = [
-    { name: 'Bass', emoji: '🐟', rarity: 'common' },
-    { name: 'Salmon', emoji: '🐟', rarity: 'common' },
-    { name: 'Trout', emoji: '🐟', rarity: 'common' },
-    { name: 'Tuna', emoji: '🐠', rarity: 'uncommon' },
-    { name: 'Swordfish', emoji: '🐠', rarity: 'uncommon' },
-    { name: 'Octopus', emoji: '🐙', rarity: 'rare' },
-    { name: 'Lobster', emoji: '🦞', rarity: 'rare' },
-    { name: 'Shark', emoji: '🦈', rarity: 'epic' },
-    { name: 'Whale', emoji: '🐋', rarity: 'legendary' },
+    { name: 'Old boot', emoji: '🐟', rarity: 'common' },
+    { name: 'Slop', emoji: '🐟', rarity: 'common' },
+    { name: 'Filbertling', emoji: '🐟', rarity: 'common' },
+    { name: 'Tung tung sahur pluishie', emoji: '🐠', rarity: 'uncommon' },
+    { name: 'Super ocky way pizza slice', emoji: '🐠', rarity: 'uncommon' },
+    { name: 'Bag of evil', emoji: '🐙', rarity: 'rare' },
+    { name: 'Broken shucky saw', emoji: '🦞', rarity: 'rare' },
+    { name: 'Bottle of liquid Ha La', emoji: '🦈', rarity: 'epic' },
+    { name: 'FRAGMENT OF THE EL JOHNITTOS', emoji: '🐋', rarity: 'legendary' },
 ];
 
 const CATCH_MESSAGES = [
-    "You cast your line into the crystal clear waters...",
-    "You wait patiently as your bobber floats...",
-    "After a few minutes of waiting, you feel a tug...",
-    "The water ripples as something takes your bait...",
-    "You reel in your catch with expert precision...",
+    "You cast your line into the nasty sinister sludge...",
+    "You wait patiently as your bobber floats among the slop...",
+    "After a few microseconds of waiting, you feel a tug...",
+    "The sludge ripples as something evil takes your bait...",
+    "You reel in your slop with sinister idea...",
 ];
 
 export default {
     data: new SlashCommandBuilder()
         .setName('fish')
-        .setDescription('Go fishing to catch fish and earn money'),
+        .setDescription('Go fishing in the sluge pit to catch sinister slop and earn Burglebucks'),
 
     execute: withErrorHandling(async (interaction, config, client) => {
         const deferred = await InteractionHelper.safeDefer(interaction);
