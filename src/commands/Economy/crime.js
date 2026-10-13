@@ -4,8 +4,8 @@ import { getEconomyData, setEconomyData } from '../../utils/economy.js';
 import { withErrorHandling, createError, ErrorTypes } from '../../utils/errorHandler.js';
 import { InteractionHelper } from '../../utils/interactionHelper.js';
 
-const CRIME_COOLDOWN = 1 * 10 * 10;
-const JAIL_TIME = 1 * 1 * 20 * 30;
+const CRIME_COOLDOWN = 10 * 10 * 10;
+const JAIL_TIME = 10 * 10 * 20 * 30;
 const FINE_RATE = 0.2;
 
 const CRIME_TYPES = [
