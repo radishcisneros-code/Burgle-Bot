@@ -44,7 +44,7 @@ export default {
                 throw createError(
                     "Cannot pay bot",
                     ErrorTypes.VALIDATION,
-                    "You cannot pay a bot.",
+                    "You cannot pay a bot ass laka.",
                     { receiverId: receiver.id, isBot: true }
                 );
             }
@@ -53,7 +53,7 @@ export default {
                 throw createError(
                     "Cannot pay self",
                     ErrorTypes.VALIDATION,
-                    "You cannot pay yourself.",
+                    "You cannot pay yourself you greedy bum.",
                     { senderId, receiverId: receiver.id }
                 );
             }
